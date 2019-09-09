@@ -7,79 +7,78 @@
     <title>Rob Canfield · Photo & Web</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 </head>
 
 <body>
 
 <!-- body -->
-<div id="row">
-    <!-- nav -->
-    <div>
-        <nav>
-            <ul>
-                <li><a href="">about</a></li>
-                <li><a href="">photography</a></li>
-                <li><a href="">web development</a></li>
-                <li><a href="">contact</a></li>
-            </ul>
-        </nav>
+<div class="container">
+
+    <div class="row">
+        <div id="header" class="col s12">
+            <img id="logo" src="./assets/images/livesenjoyable;EMBLEM.jpg" alt="logo">
+        </div>
     </div>
-    <!-- content -->
-    <div>
-        <!-- about -->
-        <div id="about">
-            <h2>Hello, I'm</h2>
-            <h1>Rob</h1>
-            <h1>Canfield</h1>
-            <span><h3>I can help with</h3></span><h3 id="services"></h3><span></span>
-        </div>
-        <!-- photo -->
-        <div id="photo">
-            <div id="all"></div>
-            <div id="travel"></div>
-            <div id="portraiture"></div>
-            <div id="commercial"></div>
-            <div id="personal"></div>
-        </div>
-        <!-- web -->
-        <div id="web">
-            <div id="project1"></div>
-            <div id="project2"></div>
-            <div id="project3"></div>
-        </div>
-        <!-- contact -->
-        <div id="contact">
-            <div class="container">
-                <form action="/action_page.php">
-                    <label for="name">your name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="what'll I call ya?">
+
+
+
+
+        <div class="row">
+            <!-- nav -->
+            <div class="col-sm-2">
+                <div>
+                    <nav>
+                        <ul>
+                            <li><a href="">about</a></li>
+                            <li><a href="">photography</a></li>
+                            <li><a href="">web development</a></li>
+                            <li><a href="">contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         
-                    <label for="subject">What do you want to talk about?</label>
-                    <select id="subject" name="subject">
-                        <option value="pick">--pick any one of these--</option>
-                        <option value="photography">photography services & rates</option>
-                        <option value="web">web services & rates</option>
-                        <option value="chit-chat">just regular chit-chat</option>
-                    </select>
-        
-                    <label id="subject" for="subject"></label>
-                    <textarea id="subject" name="subject" style="height:200px"></textarea>
-        
-                    <input type="submit" value="Submit">
-                </form>
+            <!-- content -->
+            <div class="col-sm-10">
+                <!-- about -->
+                <div id="about" class="section">
+                    about
+                </div>
+                <!-- photo -->
+                <div id="photo" class="section">
+                    photo
+                    <div id="all"></div>
+                    <div id="travel"></div>
+                    <div id="portraiture"></div>
+                    <div id="commercial"></div>
+                    <div id="personal"></div>
+                </div>
+                <!-- web -->
+                <div id="web" class="section">
+                    web
+                    <div id="project1"></div>
+                    <div id="project2"></div>
+                    <div id="project3"></div>
+                </div>
+                <!-- contact -->
+                <div id="contact" class="section">
+                    contact
+                </div>
             </div>
         </div>
-    </div> 
-</div>
+        
+
 
 <!-- footer -->
-<div class="container">
+
     <div class="row">
        
 
             <!-- social links -->
-            <div class="col-sm-4">
+            <div class="col s4">
                 <div class="social links">
                     <p><a href="">instagram</a></p>
                     <p><a href="">twitter</a></p>
@@ -88,7 +87,7 @@
             </div>
     
             <!-- copy right -->
-            <div class="col-sm-4">
+            <div class="col s4">
                 <div class="copyright">
                     <p>Copyright &copy; All Rights Reserved</p>
                 </div>
@@ -96,7 +95,7 @@
     
     
             <!-- contact -->
-            <div class="col-sm-4">
+            <div class="col s4">
                 <div class="contact-footer">
                     <p><a href="">+1 (801) 647 2191</a> / <a href="">rcanfield90@gmail.com</a></p>
                 </div>
@@ -104,9 +103,9 @@
     
         
     </div>
-</div>
-        
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</div>      
+<script type="text/javascript" src="assets/js/materialize.js"></script>
 
 </body>
 </html>
