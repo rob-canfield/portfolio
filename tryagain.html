@@ -4,41 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Photo & Web · Rob Canfield</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hcq7ayh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Paytone+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/js/PhotoSwipe-4.1.3/dist/photoswipe.css">
+    <link rel="stylesheet" href="assets/js/PhotoSwipe-4.1.3/dist/default-skin/default-skin.css">  
 </head>
 <body>
+    
+    
         
     <div id="header">
-        <img id="logo" src="assets/images/emblem.svg" alt="logo">
+        <a id="open-menu" href="#"><img src="assets/images/open_menu_button.svg" alt="open_menu_button"></a>
+        <a href="#photo" class="nav"><img id="logo" src="assets/images/emblem.svg" alt="logo"></a>
     </div>
+    
 
-        
     <div id="nav">
+
         <nav>
             <ul>
                 
-                <li><a href="">about</a></li>
-                <li><a href="">photography</a></li>
-                <li><a href="">web development</a></li>
-                <li><a href="">contact</a></li>
-
-                <a href="">instagram</a>
-                <a href="">twitter</a>
-                <a href="">linkedin</a>
+                <li><a id="photo-nav" class="nav" href="#photo">Photography</a></li>
+                <li><a id="web-nav" class="nav" href="#web">Web Development</a></li>
+                <li><a id="contact-nav" class="nav" href="#about">About</a> / <a id="contact-nav" class="nav" href="#contact">Contact</a></li>
         
             </ul>
         </nav>
-
+        
+        <div id="social-icons">
+                <a href="assets/images/robcanfield-resume-2019.pdf" class="fa" target="_blank">CV</a>
+                <a href="https://www.instagram.com/livesenjoyable" class="fa fa-instagram" target="_blank"></a>
+                <a href="https://www.twitter.com/livesenjoyable" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/rob-canfield-424353aa/" class="fa fa-linkedin" target="_blank"></a>
+                <a href="https://www.github.com/rob-canfield" class="fa fa-github" target="_blank"></a>
+        </div>
+        
        
     </div>
 
 
     <div id="content">
-        <div id="about" class="section">about</div>
+
         <div id="photo" class="section">photo</div>
+
         <div id="web" class="section">web</div>
-        <div id="contact" class="section">contact</div>
+
+        <div id="about" class="section">
+            <img src="assets/images/name.svg" alt="rob canfield" style="width: 50%; float: left;">
+            <img id="portrait" src="" alt="portrait" style="float: right;">
+        </div>
+
+        <div id="contact" class="section">
+            <h1 style="width: 100%;">Hit me up.</h1>
+            <div id="contact-info" style="width: 40%; float: left;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio blanditiis labore ipsam, sit magni nesciunt adipisci eos illo sed, ullam debitis iusto iste, culpa mollitia ex quae? Sit quisquam temporibus, esse iste impedit quidem consequatur quibusdam. Unde reiciendis aliquam voluptate ullam natus sed delectus sequi odit consectetur cum dolorem saepe, distinctio, vero alias suscipit culpa, accusamus labore nisi architecto magnam nam deleniti. Animi incidunt ab laudantium, officiis debitis ipsum eius soluta doloremque architecto dolores! Rem nemo enim facere perferendis autem maiores voluptatibus architecto sunt, facilis debitis? Expedita recusandae earum inventore voluptate quo dolore nesciunt officiis tenetur dignissimos, distinctio amet accusantium at doloremque aspernatur, quos harum odio enim aliquam. Non adipisci doloribus qui magni, mollitia dicta quam quasi nostrum ipsa temporibus voluptate voluptatibus iste recusandae autem nemo labore tempore consequatur ex sequi ad quia inventore. Unde facere repudiandae obcaecati ad. Odio consequuntur aliquam cumque fuga dolor et esse neque voluptate laborum?</p>
+            </div>
+            <div id="contact-card" style="width: 50%; float: right;">
+                <h2>Contact Info</h2>
+                <p><a href="mailto:hey@robcanfield.us?Subject=Hello%20again" class="contact-card fa fa-envelope">   hey@robcanfield.us</a></p>
+                <p><a href="https://www.instagram.com/livesenjoyable" class="contact-card fa fa-instagram" target="_blank">   Instagram</a></p>
+                <p><a href="https://www.twitter.com/livesenjoyable" class="contact-card fa fa-twitter" target="_blank">   Twitter</a></p>
+                <p><a href="https://www.linkedin.com/in/rob-canfield-424353aa/" class="contact-card fa fa-linkedin" target="_blank">   LinkedIn</a></p>
+                <p><a href="https://www.github.com/rob-canfield" class="contact-card fa fa-github" target="_blank">   GitHub</a></p>
+            </div>
+        </div>
     </div>
         
  
@@ -49,5 +82,9 @@
         </div>
     </div>
     
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/PhotoSwipe-4.1.3/dist/photoswipe.js"></script>
+    <script src="assets/js/PhotoSwipe-4.1.3/dist/photoswipe.min.js"></script> 
 </body>
 </html>

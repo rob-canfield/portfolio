@@ -1,9 +1,13 @@
+html {
+    background-color: rgb(255,255, 248);
+}
+  
 body {
     width: auto;
 }
 
 #header {
-    background-color: white;
+    background-color: rgb(255,255, 248);
     position: fixed;
     top: 0;
     left: 0;
@@ -14,68 +18,116 @@ body {
 
 #logo {
     margin: auto;
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 
-#footer {
-    background-color: white;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width:   100%;
-    height: 5%;
+#open-menu {
+    margin: auto;
+    float: left;
+    width: 10%;
+    height: 100%
 }
 
-.footer-content {
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: grey;
+nav {
+    display: none;
 }
-
- #footer:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
 #nav {
     float: left;
-    width: 20%;
+    width: 0;
     height: 100%;
-    background-color: violet;
+    background-color: rgb(255,255, 248);
     position: fixed;
     top: 20%;
-    left: 0;    
+    left: 0; 
+    transition: 0.2s;  
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10%;
+    left: 10%;  
+}
+
+li {
+    text-align: right;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+.nav {
+    text-decoration: none;
+    font-family: 'Paytone One', sans-serif;
+    color: black;
+    font-size: 18px;
+}
+
+
+#photo-nav:hover {
+    color: rgb(200, 0, 0);
+}
+
+#web-nav:hover {
+    color: rgb(240, 200, 0);
+}
+
+#contact-nav:hover {
+    color: rgb(0, 0, 200);
+}
+
+#social-icons {
+    float: right;
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    display: none;
+}
+.fa {
+    padding: 5px;
+    font-size: 40px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: black;
+}
+
+.contact-card {
+    padding: 5px;
+    font-size: 40px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: black;
+}
+
+.fa:hover {
+    opacity: .5;
 }
 
 #content {
     float: right;
-    width: 80%;
+    width: 100%;
     height: 100%;
-    background-color: aqua;
     position: absolute;
-    top: 10%;
-    right: 0;   
+    top: 20%;
+    right: 0;
+    bottom: 5%;
+    transition: 0.2s; 
 }
 
 .section{
-    height: 100%;
-    background-color: beige;
-    
+    height: 75%;
 }
 
 #about {
-    background-color: red;
+    padding: 7% 0 10% 0;
 }
-
 
 #photo {
     background-color: yellow;
@@ -88,5 +140,37 @@ body {
 
 
 #contact {
-    background-color: green; */
+    height: 105%;
 } 
+
+.contact-card {
+    margin-left: 1px;
+}
+
+#footer {
+    background-color: rgb(255,255, 248);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width:   100%;
+    height: 5%;
+}
+
+.footer-content {
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    font-family: canada-type-gibson, sans-serif;
+    color: rgb(199, 199, 199);
+}
+
+    #footer:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
