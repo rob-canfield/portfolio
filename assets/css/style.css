@@ -1,11 +1,9 @@
 html {
     background-color: rgb(255,255, 248);
 }
-  
 body {
     width: auto;
 }
-
 #header {
     background-color: rgb(255,255, 248);
     position: fixed;
@@ -15,24 +13,26 @@ body {
     width:   100%;
     height: 20%;
 }
-
 #logo {
-    margin: auto;
-    width: 80%;
     height: 100%;
+    position: absolute;
+    top: 10%;
+    left: 44%;
 }
-
 #open-menu {
     margin: auto;
     float: left;
-    width: 10%;
-    height: 100%
+    width: 5%;
+    position: fixed;
+    top: 10%;
+    left: 10%;
 }
-
+#open-menu:hover {
+    cursor: pointer;
+}
 nav {
     display: none;
 }
-
 #nav {
     float: left;
     width: 0;
@@ -41,9 +41,8 @@ nav {
     position: fixed;
     top: 20%;
     left: 0; 
-    transition: 0.2s;  
+    transition: 0.01s;  
 }
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -52,42 +51,48 @@ ul {
     top: 10%;
     left: 10%;  
 }
-
 li {
     text-align: right;
     margin-top: 20px;
     font-family: sans-serif;
 }
-
 .nav {
     text-decoration: none;
     font-family: 'Paytone One', sans-serif;
     color: black;
     font-size: 18px;
 }
-
-
+.subnav {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(80, 80, 80);
+    font-size: 16px;
+    margin-top: 10px;
+}
+#sub-photo {
+    display: none;
+}
+#sub-web {
+    display: none;
+}
 #photo-nav:hover {
     color: rgb(200, 0, 0);
 }
-
 #web-nav:hover {
     color: rgb(240, 200, 0);
 }
-
-#contact-nav:hover {
+#about-nav:hover {
     color: rgb(0, 0, 200);
 }
-
 #social-icons {
-    float: right;
+    float: left;
     position: absolute;
     bottom: 30%;
     left: 10%;
     display: none;
 }
 .fa {
-    padding: 5px;
+    padding: 1px;
     font-size: 40px;
     width: 30px;
     text-align: center;
@@ -95,7 +100,6 @@ li {
     border-radius: 50%;
     color: black;
 }
-
 .contact-card {
     padding: 5px;
     font-size: 40px;
@@ -105,11 +109,9 @@ li {
     border-radius: 50%;
     color: black;
 }
-
 .fa:hover {
     opacity: .5;
 }
-
 #content {
     float: right;
     width: 100%;
@@ -118,35 +120,19 @@ li {
     top: 20%;
     right: 0;
     bottom: 5%;
-    transition: 0.2s; 
+    transition: 0.7s; 
 }
-
 .section{
     height: 75%;
+    width: 100%;
+    overflow-x: scroll;
 }
-
 #about {
     padding: 7% 0 10% 0;
 }
-
-#photo {
-    background-color: yellow;
-}
-
-
-#web {
-    background-color: blue;
-}
-
-
-#contact {
-    height: 105%;
-} 
-
 .contact-card {
     margin-left: 1px;
 }
-
 #footer {
     background-color: rgb(255,255, 248);
     position: fixed;
@@ -155,7 +141,6 @@ li {
     width:   100%;
     height: 5%;
 }
-
 .footer-content {
     display: inline-block;
     height: auto;
@@ -165,12 +150,12 @@ li {
     bottom: 0;
     padding: 0;
     margin: 0;
-    font-family: canada-type-gibson, sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
     color: rgb(199, 199, 199);
 }
-
-    #footer:after {
+#footer:after {
     content: "";
     display: table;
     clear: both;
-    }
+}

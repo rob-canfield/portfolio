@@ -3,12 +3,12 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#231F20;stroke-width:3;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#231F20;stroke-width:13;stroke-miterlimit:10;}
 </style>
 <g>
-	<line class="st0" x1="27.78" y1="62.5" x2="172.22" y2="62.5"/>
-	<line class="st0" x1="27.78" y1="137.5" x2="172.22" y2="137.5"/>
-	<line class="st0" x1="27.78" y1="112.5" x2="172.22" y2="112.5"/>
-	<line class="st0" x1="27.78" y1="87.5" x2="172.22" y2="87.5"/>
+	<line class="st0" x1="0" y1="10" x2="144.4" y2="10"/>
+	<line class="st0" x1="0" y1="85" x2="144.4" y2="85"/>
+	<line class="st0" x1="0" y1="60" x2="144.4" y2="60"/>
+	<line class="st0" x1="0" y1="35" x2="144.4" y2="35"/>
 </g>
 </svg>
