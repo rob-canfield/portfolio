@@ -3,10 +3,10 @@ var pswpElement = document.querySelectorAll('.pswp')[0];
 // build items array
 var items = [
     {
-        src: 'https://placekitten.com/600/400',
+        src: '../images/experimental/00-experimental-robcanfield.JPG',
         w: 600,
         h: 400,
-        msrc: 'https://placekitten.com/600/400'
+        msrc: '../images/experimental/00-experimental-robcanfield.JPG'
     },
     {
         src: 'https://placekitten.com/1200/900',

@@ -1,9 +1,10 @@
 html {
     background-color: rgb(255,255, 248);
 }
-body {
-    width: auto;
-}
+/* body {
+    width: 100%;
+    height: 100%;
+} */
 #header {
     background-color: rgb(255,255, 248);
     position: fixed;
@@ -114,19 +115,34 @@ li {
 }
 #content {
     float: right;
-    width: 100%;
+    width: auto;
     height: 100%;
     position: absolute;
     top: 20%;
-    right: 0;
+    left: 0;
     bottom: 5%;
     transition: 0.7s; 
 }
-.section{
+.section {
     height: 75%;
-    width: 100%;
-    overflow-x: scroll;
+    width: 100000px;
+    overflow-y: scroll;
 }
+
+#photo {
+
+}
+
+.image {
+    display: inline;
+    padding: 3px 5px 3px 5px;
+    object-fit: inherit;
+}
+
+.image img {
+    object-fit: cover;
+}
+
 #about {
     padding: 7% 0 10% 0;
 }
