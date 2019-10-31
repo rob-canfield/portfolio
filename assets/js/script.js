@@ -3,6 +3,7 @@ $(document).ready(function(){
 	var header = $("#header");
 	var nav = $("#nav");
 	var content = $("#content");
+	var section = $(".section")
 	var menu = $("#open-menu");
 	var navItems = $("nav");
 	var socialIcons = $("#social-icons");
@@ -14,16 +15,20 @@ $(document).ready(function(){
 	
 	function openNav() {
 		nav.width("20%");
-		content.width("80%");
+		section.css({marginLeft:'200px'});
 		navItems.show();
 		socialIcons.show();
 	}
 	
 	function closeNav() {
 		nav.width(0);
-		content.width("100%");
+		section.css({marginLeft:'0px'});
 		navItems.hide();
 		socialIcons.hide();
+	}
+
+	function photoWidth () {
+
 	}
 	
 	menu.on('click', function(e){
@@ -180,11 +185,154 @@ $(document).ready(function(){
 			title: '2016 Orlando, FL'
 		}
 	]
-	
-	for (i = 0; i < 33; i++){
 
-		$("#photo").append("<div class='image'><img src='" + experimental[i].src + "' alt='" + experimental[i].title + "'></div>")
-	}
+	var portraits = [
+		{
+			src: './assets/images/portraits/01-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/02-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/03-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/04-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/05-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/06-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/07-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/08-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/09-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/10-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/11-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/12-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/13-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/14-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/15-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/16-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/17-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/18-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/19-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/20-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/21-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/22-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/23-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/24-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/25-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/26-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/27-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/28-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/29-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/30-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/31-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		},
+		{
+			src: './assets/images/portraits/32-portraits-robcanfield',
+			title: '2016 Orlando, FL'
+		}
+	]
+
+	$(".subnav").on('click', function(){
+
+		
+
+		
+		
+	})
+			
+	
+			for (i = 0; i < 33; i++){
+	
+					$("#photo").append("<img src='" + experimental[i].src + "' alt='" + experimental[i].title + "' style='height: 70%; margin-top: .09%; margin-bottom: .09%'>")
+			
+				
+			}
+	
 	
 	
 	// if (pagePosition > contactPosition) {
