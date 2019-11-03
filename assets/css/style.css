@@ -4,6 +4,20 @@ html {
 body {
     width: 100%;
 }
+h1 {
+    font-family: 'Paytone One', sans-serif;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+}
+button {
+    border: solid 3px black;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 15px;
+    margin-right: 10px;
+}
 #header {
     background-color: rgb(255,255, 248);
     position: fixed;
@@ -134,7 +148,7 @@ li {
 }
 
 #photo {
-    width: 160500px;
+    /* width: 160500px; */
 }
 
 #photo img{
@@ -146,6 +160,14 @@ li {
     object-fit: inherit;
     
 }
+.project {
+    padding: 10%;
+}
+.project-overview {
+    float: left;
+    width: 60%;
+}
+
 
 
 
